@@ -1,0 +1,13 @@
+{
+  "name": "shortener-api",
+  "version": "1.0.0",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "server": "node app.js",
+    "client": "npm start --prefix ../client",
+    "start": "concurrently \"yarn client\" \"yarn server\""
+  }
+}
